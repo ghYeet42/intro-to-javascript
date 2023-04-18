@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <p id="my_paragraph">hey, whats going on! lolzers!</p>
+
+        <hr>
+
+        <button onclick="changesStyle()">click meh!</button>
+
+        <hr>
+
+        <p>This button's number increases when you click it!</p>
+        <button onclick="addCounter()" id="counter_button">0</button>
+
+        <hr>
+
+        <input id="my_input">
+        <button onclick="inputButton()" id="input_vutton">click meh too!</button>
+        
+        <hr>
+
+        <input id="password_pwease">
+        <button onclick="secretButton()" id="input_vutton">password pwease</button>
+
+        <hr>
+
+        <script lang="js">
+           
+           console.log("hello wrld")
+            
+           document.write("<h1>hewwo wrld!</h1>")
+           document.write("welcome to my jscript site!")
+
+           function changesStyle () {
+                let myParagraph = document.getElementById("my_paragraph")
+                myParagraph.innerHTML = 'This was modified using jscript!'
+                myParagraph.style = 'background: blue; color: yellow'
+                alert("you clicked a button! (this is a pop up.)")
+           }
+
+           let counter = 0
+
+           function addCounter () {
+                counter = counter + 1
+                let counterButton = document.getElementById("counter_button")
+                counterButton.innerHTML = counter
+           }
+
+           function inputButton () {
+            let myInput = document.getElementById("my_input")
+            console.log(myInput.value)
+           }
+
+           function secretButton () {
+                let theSecretCode = document.getElementById("password_pwease")
+                
+                if (theSecretCode == "money") {
+                    function secretButton () {
+                        window.location = 'https://youtube.com'
+                    }
+                } else {
+                    document.write("THAT IS NOT PASSWORD PWEASE!!!")
+                }
+           }
+
+
+           if (theSecretCode == "money") {
+                    function secretButton () {
+                        window.location = 'https://youtube.com'
+                    }
+                } else {
+                    document.write("THAT IS NOT PASSWORD PWEASE!!!")
+                }
+        </script>
+
+    </body>
+</html>
