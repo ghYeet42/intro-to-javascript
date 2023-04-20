@@ -2,8 +2,10 @@ let aquarium = document.getElementById("aquarium")
 
 let turtle = new RealTurtle.default(aquarium, {autoStart: true})
 
+turtle.setSpeed(0.4)
+
 turtle.setStrokeColorRGB(234, 123, 40)
-turtle.setFillStyle('brown')
+turtle.setFillStyle('red')
 
 
 turtle.beginPath()
@@ -19,11 +21,33 @@ turtle.closePath()
 turtle.fill()
 
 
-turtle.setStrokeColorRGB(234, 123, 40)
+///sealing
+
+turtle.setStrokeColorRGB(0, 0, 0)
 turtle.setFillStyle('black')
 
+turtle.setPosition(150, 25)
+
+turtle.beginPath()
+
+turtle.right(70) 
+turtle.forward(55)
+turtle.right(41)
+turtle.forward(52)
+turtle.right(159)
+turtle.forward(100)
+
+
+turtle.closePath()
+turtle.fill()
+
+turtle.setStrokeColorRGB(234, 123, 40)
+turtle.setFillStyle('CornflowerBlue')
+
 ///windo 1
-turtle.setPosition(160, 60)
+turtle.setPosition(173, 60)
+
+turtle.beginPath()
 
 for (let i = 0; i < 4; i++) {
     turtle.forward(12.5)
@@ -36,10 +60,12 @@ turtle.fill()
 
 
 turtle.setStrokeColorRGB(234, 123, 40)
-turtle.setFillStyle('brown')
+turtle.setFillStyle('CornflowerBlue')
 
 ///windo 2
-turtle.setPosition(215, 60)
+turtle.setPosition(227, 60)
+
+turtle.beginPath()
 
 for (let i = 0; i < 4; i++) {
     turtle.forward(12.5)
@@ -50,9 +76,15 @@ for (let i = 0; i < 4; i++) {
 turtle.closePath()
 turtle.fill()
 
+
+turtle.setStrokeColorRGB(234, 123, 40)
+turtle.setFillStyle('Darkgoldenrod')
 
 ///dorr
 turtle.setPosition(192, 125)
+
+turtle.beginPath()
+
 
 for (let i = 0; i < 4; i++) {
     turtle.forward(30)
@@ -61,27 +93,24 @@ for (let i = 0; i < 4; i++) {
     turtle.right(90)
 }
 
-///sealing
-turtle.setPosition(150, 25)
-
-turtle.right(70) 
-turtle.forward(57.5)
-turtle.right(45)
-turtle.forward(48)
-turtle.right(155)
-turtle.forward(98)
-
-
 turtle.closePath()
 turtle.fill()
 
 
-turtle.setPosition(20, 60)
+urtle.setStrokeColorRGB(234, 123, 40)
+turtle.setFillStyle('skyblue')
+
+
+turtle.setPosition(0, 0)
+
+turtle.beginPath()
+
 
 for (let i = 0; i < 4; i++) {
-    turtle.forward(50)
-    turtle.right(90)
-    turtle.forward(50)
+    turtle.forward(90)
+    turtle.right(300)
 }
 
-turtle.arc(50, 360)
+
+turtle.arc(30, 360)
+
