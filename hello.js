@@ -29,3 +29,36 @@ for (let item of myList) {
 for (let item of myList1) {
     console.log(item) 
 }
+
+
+///
+
+for (let i = 0; i < 360; i++) {
+    turtle.forward(0.1)
+    turtle.right(1)
+    turtle.forward(0.1)
+}
+
+for (let i = 0; i < 4; i++) {
+    turtle.forward(50)
+    turtle.right(120)
+    turtle.forward(50)
+}
+
+for (let i = 0; i < 360; i++) {
+    turtle.forward(0.1)
+    turtle.right(1)
+    turtle.forward(0.1)
+}
+
+for (let i = 0; i < 3; i++) {
+    turtle.forward(50)
+    turtle.right(120)
+    turtle.forward(50)
+}
+
+for (let i = 0; i < 360; i++) {
+    turtle.forward(0.1)
+    turtle.right(1)
+    turtle.forward(0.1)
+}

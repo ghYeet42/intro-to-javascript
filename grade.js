@@ -29,3 +29,5 @@ for (let item of myList) {
 for (let item of myist1) {
     console.log(item) * 6
 }
+
+
