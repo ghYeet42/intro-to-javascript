@@ -2,13 +2,17 @@ let aquarium = document.getElementById("aquarium")
 
 let turtle = new RealTurtle.default(aquarium, {autoStart: true})
 
-turtle.setSpeed(0.4)
 
-function polygon(sides, size) {
+function polygon(sides, size = 20) {
     for (i = 0; i < sides; i++) {
         turtle.forward(size)
         turtle.right(360/sides)
     }
 }
 
-polygon(3, 2)
+
+for (i = 0; i < 5; i++) {
+    polygon((Math.random() * 10) + 3)
+}
+
+polygon()
