@@ -6,11 +6,17 @@ let mins = 0
 
 let digital = document.getElementById("digital")
 
+let startButton = document.getElementById("startTime")
+
+let lapsList = document.getElementById("lapTimeList")
+
+//let laps = document.getElementById("doLaps")
+
 let interval;
 
 function startTheTime () {
 
-    resetTheTime()
+    startButton.disabled = true
     
     interval = setInterval(function () {
        
@@ -32,9 +38,27 @@ function startTheTime () {
 
 }
 
+function laps () {
+    
+    let newLapTime = document.createElement('li')
+    newLapTime.textContent = mins + ':' + String(secs).padStart(2, '0') + ':' + ms
+
+    lapTimeList.appendChild(newLapTime) 
+
+}
+
+function resetLapList () {
+    lapTimeList.appendChild(newLapTime) 
+}
+
+
 
 function stopTheTime () {
+
     clearInterval(interval)
+
+    startButton.disabled = false
+
 }
 
 
