@@ -4,19 +4,17 @@
 }
 
 body {
-    padding-top: 25%;
+    padding-top: 10%;
 }
 
 h1 {
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding-top: 20;
     text-decoration: underline;
 }
 
 h2 {
-    padding-top: 10%;
-    
+    padding-top: 5%;
 }
 
 #startTime {
@@ -26,7 +24,16 @@ h2 {
     left: 30%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    padding-top: 20%;
     padding: 15px 32px;
+}
+
+ol {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    list-style-type: none;
+    padding-top: 50%;
+
 }
 
 #stopTime {
@@ -49,6 +56,16 @@ h2 {
     padding: 15px 32px;
 }
 
+#doLaps {
+    margin: 0;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+}
+
 button {
     background-color: bisque;
     border-radius: 7px;
@@ -58,3 +75,8 @@ button {
 button:active {
     background-color: rgb(255, 195, 122);
 }
+
+button:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+} 

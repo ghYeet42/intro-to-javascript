@@ -48,7 +48,7 @@ function laps () {
 }
 
 function resetLapList () {
-    lapTimeList.appendChild(newLapTime) 
+    
 }
 
 
